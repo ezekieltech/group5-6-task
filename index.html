@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Employee Salary Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/myStyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script type="text/javascript" src="js/myjs.js"></script>
+<!--         <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script type="text/javascript">
+        	// var status = prompt("Are you an Employee? y/n ");
+        	// function checkStatus()
+        	// {
+        		
+        	// 	if(status.toString() === 'n' || status.toString() === 'no')
+        	// 	{
+
+        	// 		window.location="http://www.google.com";
+        	// 	}
+        		
+
+        	// }
+
+        	// checkStatus();
+
+
+
+
+        </script>
+
+    </head>
+    <body>
+        <div class="navbar">
+        
+        		<p>EMPLOYEE SALARY CALCULATOR</p>
+
+        </div>
+       
+
+        <div class="body-intro">
+        	
+    		<span  id="special">
+    			Welcome
+
+    		</span>
+        		
+
+        	
+        	<p>
+        		Kindly fill out the form
+        	</p>
+	        <form name="fm" action="" method="">
+
+	        	<p><input type="text" name="name" placeholder="Enter your first name" class="inputfield clear-fix" /></p>
+	        	<p><input type="text" name="name" placeholder="Enter your last name"  class="inputfield clear-fix"/></p>
+            			<!-- <input type="text" id="select" name=""> -->
+            	<select name="Employee" class="inputfield clear-fix" id = "results">
+               		<option name="null" value="null">Choose your job type</option>
+               		<option name="Interns" value="Interns">Interns</option>
+                    <option name="Associates"  value="Associates">Associates</option>
+                    <option name="Managers"  value="Managers">Managers</option>
+                    <option name="Executives"  value="Executives">Executives</option>
+                    <option name="Directors"  value="Directors">Directors</option>
+                            
+                </select>
+
+                <p>
+
+                <select name="level" class="inputfield clear-fix" id = "results">
+                	<option name="null" value="null">Choose your level</option>
+               		<option name="level1" value="level1">Level 1</option>
+                    <option name="level2" value="level2">Level 2</option>
+                    <option name="level3" value="level1">Level 3</option>
+                    <option name="level4" value="level1">Level 4</option>
+                            
+                </select>
+            </p>
+                <!-- <p><button type="button" class="inputfield">Submit</button></p> -->
+                <p><input value="Submit" type="submit" class="inputfield"></p>
+                <!-- <input value="Hello" type="button" onClick="gotoNode(result.name)" />​ -->
+
+			</form>
+        
+	        <div  class ="img-box" id="img1">
+
+	        	<h3>Salary Details</h3>
+	        	<hr>
+	        	<div id = "result"> 
+
+	        	</div>
+
+	        </div>
+
+        </div>
+	        
+	        
+		<div class=" footer clear-fix">
+			<h3>Thank you for using our app.</h3>
+		</div>
+    	
+    	
+    </body>
+</html>

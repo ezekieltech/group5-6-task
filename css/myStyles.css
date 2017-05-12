@@ -1,0 +1,145 @@
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Arial, Verdana, Helvetica, "Helvetica Neue", sans-serif;
+	font-weight: 100px;
+	
+}
+
+
+  	
+
+
+
+
+.navbar > p:hover, p:focus { 
+	text-decoration: none; 
+	text-shadow: 1px 2px 10px; #FFE599;
+	cursor: pointer;
+	}
+
+.footer{
+	display: block;
+	height:auto;
+	margin-bottom:10px;
+	padding:10px 0 0 ;
+	font-size: 11px;
+	color: #fff;
+	line-height: 2.5em;
+	background-color:#000; 
+	text-align: center;
+	}
+
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	margin: 0;
+	height: 30px;
+	font-size: 16px;
+	position: absolute;
+	z-index: 111;
+	width: 100%;
+	padding-top: 10px;
+	text-align: center;
+	
+}
+
+
+.body-intro {
+		display: block;
+		background-color:red;
+		left:0;
+		right:0;
+		margin: 0;
+		color:#fff !important;
+		/*overflow:hidden;*/
+		background-image:url(../img/firm.jpg);
+		background-size: cover;
+		height:auto;
+		width:auto;
+		padding: 50px 50px;
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+
+
+	}
+#special {
+		display: inline-block;
+		border: 1px solid #fff;
+		border-radius: 4px;
+		font-size: 20px;
+		text-align: center;
+		padding: 5px;
+		font-weight: bold;
+		margin-bottom: 15px;
+}
+
+
+.img-box {
+		display: block;
+		height: 300px;
+		padding: 10px 10px;
+		background-color: rgba(255, 255, 255, 0.6);
+		width: 400px;
+		/*float: left;*/
+		border-radius: 5px;
+		color: #333;
+		text-align: center;
+		line-height: 2em;
+		font-weight:bolder;
+		margin: 20px auto;
+		
+
+	}
+.inputfield { 
+	width: 400px; 
+	height: 33px; 
+	border: 1px solid #999999; 
+	padding: 5px; 
+	border-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+#img1{
+	
+		background-size: cover;
+		font-size: 16px
+		
+}
+
+
+
+.link-box {
+		display: block;
+		height: auto;
+		padding: 0 50px;
+		margin-top: 40px;
+		margin-left: 0;
+		margin-right: 0px;
+		margin-bottom: 0;
+		width: auto;
+		float: left;
+		list-style-type: none;
+		font-size: 11px;
+		color: #222222;
+		line-height: 2em;
+		font-weight: 400px;
+	
+
+	}
+
+hr{
+		border: 0;
+		height: 1px;
+		background: #333;
+		background-image: linear-gradient(to right, #bbb, #fff, #bbb);
+}
+.clear-fix {
+	clear: both;
+
+}
+
