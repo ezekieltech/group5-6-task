@@ -1,79 +1,77 @@
-(function(){
-    var level = document.getElementById('#results').value;
-    console.log(level);
-})();
+var calculateSalary = function(jobtype, level) {
+        this.jobtype = jobtype;
+        this.salary = 10000;
+        this.transport = 1;
+        this.medical = 1;
+        this.string='';
+        this.level=level;
+    };
 
- let employee = (rank) => {
-        let baseSalary;
-        let feedingAllowance;
-        let healthAllowance;
-        let transportAllowance;
-        let wardrobeAllowance;
-        let salaryDetails
-        
- 		if (rank === 'Interns'){
- 			baseSalary = 2000;
- 			transportAllowance = 200;
-            
-            
-            salarySum = baseSalary + transportAllowance;
-    		} 
- 		else if (rank === 'Associates'){
- 			baseSalary = 3200;
- 			transportAllowance = 300;
- 			salarySum = baseSalary + transportAllowance;
- 			
- 		}
- 		else if (rank === 'Managers'){
- 			baseSalary = 3300;
- 			feedingAllowance = 400;
- 			transportAllowance = 250;
- 			salarySum = baseSalary + feedingAllowance + transportAllowance;
- 			
- 		}
- 		else if (rank === 'Executives'){
- 			baseSalary = 3900;
- 			feedingAllowance = 500;
- 			healthAllowance = 600;
- 			transportAllowance = 200;
+calculateSalary.prototype.amountFromLevel = function(){
 
- 			salarySum = baseSalary + feedingAllowance + healthAllowance + transportAllowance;
-     
-      		}
- 		else if (rank === 'Directors'){
- 			baseSalary = 4500;
- 			feedingAllowance = 600;
- 			healthAllowance = 600;
- 			transportAllowance = 300;
- 			salarySum = baseSalary + feedingAllowance + healthAllowance + transportAllowance;
- 			
- 		} 
- 		return salarySum;- 
-        
-    }
+      var theAmount;
+       if(this.level === 'I') {
+            return  this.salary  + 10000;
+          }
+          else if (this.level === 'II'){
+            return this.salary  + 20000;
+          }
+          else if (this.level === 'III'){
+            theAmount = this.salary  + 30000;
+            return theAmount;
+          }
+          else if (this.level === 'III'){
+            theAmount = this.salary  + 40000;
+            return theAmount;
+          }
+            else if (this.level === 'IV'){
+            theAmount = this.salary  + 50000;
+            return theAmount;
+          }
+    };
 
-
-
-
-
-
-// document.ready(var inputElement = document.createElement('input');
-// inputElement.type = "button"
-// inputElement.addEventListener('click', function(){
-//     employee();
-// });
-
-// ​document.body.form.appendChild(inputElement);​
-// )();
-// // console.log(employee('Directors'));
-//    
-
-// var result = {name: 'hello'};
-// function gotoNode(name) {
-//     alert(name);
-
-// }
-
-// function a1_onclick(id) {
-//         document.getElementById(id).style.backgroundColor = "#F00";   
-//     }
+calculateSalary.prototype.amonoutFromJobType = function(){
+  
+      var theJobTypeSalary;
+       if(this.jobtype === 'Interns') {
+            theJobTypeSalary = this.salary  + 90000;
+            return theJobTypeSalary;
+          }
+          else if(this.jobtype === 'Associates'){
+            theJobTypeSalary = this.salary  + 140000;
+            return theJobTypeSalary;
+          }
+          else if(this.jobtype === 'Managers'){
+            theJobTypeSalary = this.salary  + 190000;
+            return theJobTypeSalary;
+          }
+          else if(this.jobtype === 'Executives'){
+            theJobTypeSalary = this.salary  + 230000;
+            return theJobTypeSalary;
+          }
+            else if(this.jobtype === 'Directors'){
+            theJobTypeSalary = this.salary  + 280000;
+            return theJobTypeSalary;
+            }
+    };
+    
+calculateSalary.prototype.InternsSalary = function(){
+  
+          var arrayOne = ['I', 'II', 'III', 'IV'];
+          var arrayTwo = ['Interns', 'Associates', 'Managers', 'Executives'];
+          for (var i=0; i<arrayOne.length+1; ++i){
+            if(this.level === arrayOne[i]){
+            var firstBonnie = new calculateSalary(arrayTwo[i], arrayOne[i]);
+            console.log(firstBonnie.amountFromLevel());
+            var jobTypeAmount = firstBonnie.amonoutFromJobType();
+            var jobLevelAmount = firstBonnie.amountFromLevel();
+            console.log(jobLevelAmount);
+            console.log(jobTypeAmount);
+            var basicSalary = jobTypeAmount + jobLevelAmount;
+            this.transport = this.transport * 0.05 * basicSalary;
+            this.medical = this.medical * 0.2 * basicSalary;
+            this.string = 'Basic Salary: ' + basicSalary + '; ' + 'Transport: ' + this.transport + '; Medical: ' + this.medical ;
+            return this.string;
+            }
+          }
+          };
